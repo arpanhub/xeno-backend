@@ -69,7 +69,7 @@ LOG_LEVEL=info
 LOG_FORMAT=json
 ```
 # Clone the repository
-git clone https://github.com/yourusername/mini-crm-backend.git
+git clone https://github.com/arpanhub/xeno-backend.git
 cd mini-crm-backend
 
 # Install dependencies
