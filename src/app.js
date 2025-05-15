@@ -10,14 +10,15 @@ app.use(cors());
 app.use(express.json());
 
 
+
 app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/dashboard', require('./routes/dashboard.routes'));
 app.use('/api/customers', require('./routes/customer.routes'));
 app.use('/api/campaigns', require('./routes/campaign.routes'));
 app.use('/api/segments', require('./routes/segment.routes'));
 app.use('/api/message-logs', require('./routes/messageLog.routes'));
-app.use('/api/genai', require('./routes/GenaiRoutes'));
-
+app.use('/api/genai', require('./routes/Genai.routes'));
+app.use('/api/oauth', require('./routes/oauth.routes'));
 
 
 mongoose.connect(process.env.MONGODB_URI, {
